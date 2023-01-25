@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "4iIENxJpebeMGRQ6nMnz2d3tBHaX2xjaSPokZraGO9ncDfNuRKqYJtQU6276M0f/ee+RjLrebYqkBICvYwqe4w==",
+  "dgSpecHash": "zNZB8OJ3Cdnm98VPg7cV768rgZrfORVdXwNTIYrrRIc7FFPzpK/bq4KB+i3ov5x4jWFA0t7DU/ngOwPB4jFTPg==",
   "success": true,
-  "projectFilePath": "C:\\Users\\Presto\\source\\repos\\pmmesecher\\CIS174-Preston-Mesecher\\Ch04Ex1MovieListMesecher\\MovieList\\MovieList.csproj",
+  "projectFilePath": "C:\\Users\\Presto\\Documents\\GitHub\\CIS174-Preston-Mesecher\\Ch04Ex1MovieListMesecher\\MovieList\\MovieList.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\Presto\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\Presto\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

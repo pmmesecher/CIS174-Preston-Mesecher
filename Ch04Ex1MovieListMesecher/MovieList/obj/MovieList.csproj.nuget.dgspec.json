@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\Presto\\source\\repos\\pmmesecher\\CIS174-Preston-Mesecher\\Ch04Ex1MovieListMesecher\\MovieList\\MovieList.csproj": {}
+    "C:\\Users\\Presto\\Documents\\GitHub\\CIS174-Preston-Mesecher\\Ch04Ex1MovieListMesecher\\MovieList\\MovieList.csproj": {}
   },
   "projects": {
-    "C:\\Users\\Presto\\source\\repos\\pmmesecher\\CIS174-Preston-Mesecher\\Ch04Ex1MovieListMesecher\\MovieList\\MovieList.csproj": {
+    "C:\\Users\\Presto\\Documents\\GitHub\\CIS174-Preston-Mesecher\\Ch04Ex1MovieListMesecher\\MovieList\\MovieList.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\Presto\\source\\repos\\pmmesecher\\CIS174-Preston-Mesecher\\Ch04Ex1MovieListMesecher\\MovieList\\MovieList.csproj",
+        "projectUniqueName": "C:\\Users\\Presto\\Documents\\GitHub\\CIS174-Preston-Mesecher\\Ch04Ex1MovieListMesecher\\MovieList\\MovieList.csproj",
         "projectName": "MovieList",
-        "projectPath": "C:\\Users\\Presto\\source\\repos\\pmmesecher\\CIS174-Preston-Mesecher\\Ch04Ex1MovieListMesecher\\MovieList\\MovieList.csproj",
+        "projectPath": "C:\\Users\\Presto\\Documents\\GitHub\\CIS174-Preston-Mesecher\\Ch04Ex1MovieListMesecher\\MovieList\\MovieList.csproj",
         "packagesPath": "C:\\Users\\Presto\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\Presto\\source\\repos\\pmmesecher\\CIS174-Preston-Mesecher\\Ch04Ex1MovieListMesecher\\MovieList\\obj\\",
+        "outputPath": "C:\\Users\\Presto\\Documents\\GitHub\\CIS174-Preston-Mesecher\\Ch04Ex1MovieListMesecher\\MovieList\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\Presto\\AppData\\Roaming\\NuGet\\NuGet.Config",
