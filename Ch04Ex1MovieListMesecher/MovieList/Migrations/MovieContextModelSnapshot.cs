@@ -22,7 +22,7 @@ namespace MovieList.Migrations
 
             SqlServerModelBuilderExtensions.UseIdentityColumns(modelBuilder);
 
-            modelBuilder.Entity("MovieList.Models.Genre", b =>
+            modelBuilder.Entity("Genre", b =>
                 {
                     b.Property<string>("GenreId")
                         .HasColumnType("nvarchar(450)");
@@ -33,7 +33,7 @@ namespace MovieList.Migrations
 
                     b.HasKey("GenreId");
 
-                    b.ToTable("Genres");
+                    b.ToTable("Genres", (string)null);
 
                     b.HasData(
                         new
@@ -101,7 +101,7 @@ namespace MovieList.Migrations
 
                     b.HasIndex("GenreId");
 
-                    b.ToTable("Movies");
+                    b.ToTable("Movies", (string)null);
 
                     b.HasData(
                         new
@@ -132,7 +132,7 @@ namespace MovieList.Migrations
 
             modelBuilder.Entity("MovieList.Models.Movie", b =>
                 {
-                    b.HasOne("MovieList.Models.Genre", "Genre")
+                    b.HasOne("Genre", "Genre")
                         .WithMany()
                         .HasForeignKey("GenreId")
                         .OnDelete(DeleteBehavior.Cascade)
