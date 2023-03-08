@@ -14,10 +14,13 @@ namespace OlympicGamesMesecher.Controllers
             context = ctx;
         }
 
-        public IActionResult Index(string activeGm = "all",
-                                   string activeCtgy = "all")
+        public IActionResult Index(string activeGm = "all", string activeCtgy = "all")
         {
-            var data = new CountryListViewModel
+            var session = new OlympicSession(HttpContext.Session);
+            session.SetActiveGm(activeGm);
+            session.SetActiveCtgy(activeCtgy);
+
+            var model = new CountryListViewModel
             {
                 ActiveGm = activeGm,
                 ActiveCtgy = activeCtgy,
@@ -32,34 +35,49 @@ namespace OlympicGamesMesecher.Controllers
             if (activeCtgy != "all")
                 query = query.Where(
                     t => t.Category.CategoryID.ToLower() == activeCtgy.ToLower());
-            data.Countries = query.ToList();
+            model.Countries = query.ToList();
 
-            return View(data);
+            return View(model);
         }
 
-        [HttpPost]
-        public IActionResult Details(CountryViewModel model)
-        {
-            Utility.LogCountryClick(model.Country.CountryID);
-
-            TempData["ActiveGm"] = model.ActiveGm;
-            TempData["ActiveCtgy"] = model.ActiveCtgy;
-            return RedirectToAction("Details", new { ID = model.Country.CountryID });
-        }
-
-        [HttpGet]
         public IActionResult Details(string id)
         {
+            var session = new OlympicSession(HttpContext.Session);
             var model = new CountryViewModel
             {
                 Country = context.Countries
                     .Include(t => t.Game)
                     .Include(t => t.Category)
                     .FirstOrDefault(t => t.CountryID == id),
-                ActiveCtgy = TempData?["ActiveCtgy"]?.ToString() ?? "all",
-                ActiveGm = TempData?["ActiveGm"]?.ToString() ?? "all"
+                ActiveGm = session.GetActiveGm(),
+                ActiveCtgy = session.GetActiveCtgy()
             };
             return View(model);
+        }
+
+
+        [HttpPost]
+        public RedirectToActionResult Add(CountryViewModel data)
+        {
+            data.Country = context.Countries
+                .Include(t => t.Game)
+                .Include(t => t.Category)
+                .Where(t => t.CountryID == data.Country.CountryID)
+                .FirstOrDefault();
+
+            var session = new OlympicSession(HttpContext.Session);
+            var countries = session.GetMyCountries();
+            countries.Add(data.Country);
+            session.SetMyCountries(countries);
+
+            TempData["message"] = $"{data.Country.Name} added to your favorites";
+
+            return RedirectToAction("Index",
+                new
+                {
+                    ActiveGm = session.GetActiveGm(),
+                    ActiveCtgy = session.GetActiveCtgy()
+                });
         }
     }
 }

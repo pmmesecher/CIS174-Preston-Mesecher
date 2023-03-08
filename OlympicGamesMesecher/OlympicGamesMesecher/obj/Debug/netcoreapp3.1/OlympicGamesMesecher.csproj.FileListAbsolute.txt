@@ -130,3 +130,7 @@ C:\Users\Presto\Documents\GitHub\CIS174-Preston-Mesecher\OlympicGamesMesecher\Ol
 C:\Users\Presto\Documents\GitHub\CIS174-Preston-Mesecher\OlympicGamesMesecher\OlympicGamesMesecher\obj\Debug\netcoreapp3.1\OlympicGamesMesecher.dll
 C:\Users\Presto\Documents\GitHub\CIS174-Preston-Mesecher\OlympicGamesMesecher\OlympicGamesMesecher\obj\Debug\netcoreapp3.1\OlympicGamesMesecher.pdb
 C:\Users\Presto\Documents\GitHub\CIS174-Preston-Mesecher\OlympicGamesMesecher\OlympicGamesMesecher\obj\Debug\netcoreapp3.1\OlympicGamesMesecher.genruntimeconfig.cache
+C:\Users\Presto\Documents\GitHub\CIS174-Preston-Mesecher\OlympicGamesMesecher\OlympicGamesMesecher\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.JsonPatch.dll
+C:\Users\Presto\Documents\GitHub\CIS174-Preston-Mesecher\OlympicGamesMesecher\OlympicGamesMesecher\bin\Debug\netcoreapp3.1\Microsoft.AspNetCore.Mvc.NewtonsoftJson.dll
+C:\Users\Presto\Documents\GitHub\CIS174-Preston-Mesecher\OlympicGamesMesecher\OlympicGamesMesecher\bin\Debug\netcoreapp3.1\Newtonsoft.Json.Bson.dll
+C:\Users\Presto\Documents\GitHub\CIS174-Preston-Mesecher\OlympicGamesMesecher\OlympicGamesMesecher\obj\Debug\netcoreapp3.1\Razor\Views\Favorites\Index.cshtml.g.cs

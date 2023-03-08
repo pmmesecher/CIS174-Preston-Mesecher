@@ -21,6 +21,12 @@ namespace OlympicGamesMesecher
         // Use this method to add services to the container.
         public void ConfigureServices(IServiceCollection services)
         {
+
+            services.AddRouting(options => options.LowercaseUrls = true);
+
+            services.AddMemoryCache();
+            services.AddSession();
+
             services.AddControllersWithViews();
 
             services.AddDbContext<CountryContext>(options =>
@@ -35,6 +41,9 @@ namespace OlympicGamesMesecher
             app.UseStaticFiles();
 
             app.UseRouting();
+
+            app.UseSession();
+
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllerRoute(
