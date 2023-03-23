@@ -13,9 +13,9 @@ namespace OlympicGamesMesecher.Models
             get => games;
             set
             {
-                games = value;
-                games.Insert(0,
-                    new Game{ GameID = "all", Name = "All" });
+                games = new List<Game> {
+                    new Game{ GameID = "all", Name = "All" } };
+                games.AddRange(value);
             }
         }
 
@@ -25,9 +25,9 @@ namespace OlympicGamesMesecher.Models
             get => categorys;
             set
             {
-                categorys = value;
-                categorys.Insert(0,
-                    new Category { CategoryID = "all", Name = "All" });
+                categorys = new List<Category> {
+                    new Category { CategoryID = "all", Name = "All" } };
+                categorys.AddRange(value);
             }
         }
 

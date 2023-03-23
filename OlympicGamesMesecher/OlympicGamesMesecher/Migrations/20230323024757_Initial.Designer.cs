@@ -9,8 +9,8 @@ using OlympicGamesMesecher.Models;
 namespace OlympicGamesMesecher.Migrations
 {
     [DbContext(typeof(CountryContext))]
-    [Migration("20230308000325_initial")]
-    partial class initial
+    [Migration("20230323024757_Initial")]
+    partial class Initial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
