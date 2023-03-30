@@ -1,0 +1,27 @@
+﻿@model FirstResponsiveWebAppModel
+@{
+    ViewBag.Title = "Age Calculator";
+}
+<h1>Age Calculator</h1>
+<form asp-action="Index" method="post" class="form-horizontal">
+    <div asp-validation-summary="All"></div>
+    <div class="row">
+        <label asp-for="Name"class="control-label col-sm-3">User's Name:</label>
+        <input asp-for="Name" class="form-control col-sm-3" />
+        <span asp-validation-for="Name" class="text-danger col"></span>
+    </div>
+    <div class="row">
+        <label asp-for="Birthdate"class="control-label col-sm-3">Date of Birth:</label>
+        <input asp-for="Birthdate" type="date" class="form-control col-sm-3" />
+        <span asp-validation-for="Birthdate" class="text-danger col"></span>
+    </div>
+
+    <button type="submit" class="btn btn-primary">Submit</button>
+    <a asp-action="Index" class="btn btn-outline-secondary">Clear</a>
+
+    <div class="row">
+        <label class="control-label col-sm-3">@ViewBag.Name</label>
+        <label class="control-label col-sm-3">@ViewBag.Age</label>
+    </div>
+
+</form>
