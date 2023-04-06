@@ -1,0 +1,40 @@
+<Project Sdk="Microsoft.NET.Sdk.Web">
+
+  <PropertyGroup>
+    <TargetFramework>netcoreapp3.1</TargetFramework>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Compile Remove="Migrations\20190615002444_Initial.cs" />
+    <Compile Remove="Migrations\20190615002444_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20190617205242_Initial.cs" />
+    <Compile Remove="Migrations\20190617205242_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20230405235853_Initial.cs" />
+    <Compile Remove="Migrations\20230405235853_Initial.Designer.cs" />
+    <Compile Remove="Migrations\20230406002922_Intial.cs" />
+    <Compile Remove="Migrations\20230406002922_Intial.Designer.cs" />
+    <Compile Remove="Migrations\20230406005803_Intial.cs" />
+    <Compile Remove="Migrations\20230406005803_Intial.Designer.cs" />
+    <Compile Remove="Migrations\20230406005927_Intial.cs" />
+    <Compile Remove="Migrations\20230406005927_Intial.Designer.cs" />
+    <Compile Remove="Migrations\20230406005957_Intial.cs" />
+    <Compile Remove="Migrations\20230406005957_Intial.Designer.cs" />
+    <Compile Remove="Migrations\20230406010209_Intial.cs" />
+    <Compile Remove="Migrations\20230406010209_Intial.Designer.cs" />
+    <Compile Remove="Migrations\20230406010546_Intial.cs" />
+    <Compile Remove="Migrations\20230406010546_Intial.Designer.cs" />
+    <Compile Remove="Migrations\20230406010811_Intial.cs" />
+    <Compile Remove="Migrations\20230406010811_Intial.Designer.cs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.EntityFrameworkCore.SqlServer" Version="3.1.0" />
+    <PackageReference Include="Microsoft.EntityFrameworkCore.Tools" Version="3.1.0">
+      <PrivateAssets>all</PrivateAssets>
+      <IncludeAssets>runtime; build; native; contentfiles; analyzers; buildtransitive</IncludeAssets>
+    </PackageReference>
+    <PackageReference Include="Microsoft.Extensions.Logging.Debug" Version="3.1.0" />
+    <PackageReference Include="Microsoft.VisualStudio.Web.CodeGeneration.Design" Version="3.1.0" />
+  </ItemGroup>
+
+</Project>

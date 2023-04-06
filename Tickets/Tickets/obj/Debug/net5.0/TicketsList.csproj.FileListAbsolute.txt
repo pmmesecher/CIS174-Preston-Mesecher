@@ -1,0 +1,8 @@
+C:\Users\Presto\Documents\GitHub\CIS174-Preston-Mesecher\Tickets\Tickets\obj\Debug\net5.0\TicketsList.csproj.AssemblyReference.cache
+C:\Users\Presto\Documents\GitHub\CIS174-Preston-Mesecher\Tickets\Tickets\obj\Debug\net5.0\TicketsList.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\Presto\Documents\GitHub\CIS174-Preston-Mesecher\Tickets\Tickets\obj\Debug\net5.0\TicketsList.AssemblyInfoInputs.cache
+C:\Users\Presto\Documents\GitHub\CIS174-Preston-Mesecher\Tickets\Tickets\obj\Debug\net5.0\TicketsList.AssemblyInfo.cs
+C:\Users\Presto\Documents\GitHub\CIS174-Preston-Mesecher\Tickets\Tickets\obj\Debug\net5.0\TicketsList.csproj.CoreCompileInputs.cache
+C:\Users\Presto\Documents\GitHub\CIS174-Preston-Mesecher\Tickets\Tickets\obj\Debug\net5.0\TicketsList.MvcApplicationPartsAssemblyInfo.cache
+C:\Users\Presto\Documents\GitHub\CIS174-Preston-Mesecher\Tickets\Tickets\obj\Debug\net5.0\TicketsList.RazorAssemblyInfo.cache
+C:\Users\Presto\Documents\GitHub\CIS174-Preston-Mesecher\Tickets\Tickets\obj\Debug\net5.0\TicketsList.RazorAssemblyInfo.cs
