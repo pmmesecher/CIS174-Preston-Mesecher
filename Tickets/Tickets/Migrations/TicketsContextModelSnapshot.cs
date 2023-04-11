@@ -68,6 +68,10 @@ namespace TicketsList.Migrations
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
+                    b.Property<string>("Point")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
                     b.Property<string>("Sprint")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");

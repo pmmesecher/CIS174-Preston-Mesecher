@@ -16,6 +16,8 @@ namespace TicketsList.Models
         [Required(ErrorMessage = "Please enter a sprint number.")]
         public string Sprint { get; set; }
 
+        [Required(ErrorMessage = "Please enter a point value.")]
+        public string Point { get; set; }
 
         [Required(ErrorMessage = "Please select a status.")]
         public string StatusId { get; set; }

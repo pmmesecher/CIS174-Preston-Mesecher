@@ -9,8 +9,8 @@ using TicketsList.Models;
 namespace TicketsList.Migrations
 {
     [DbContext(typeof(TicketsContext))]
-    [Migration("20230406011152_Intial")]
-    partial class Intial
+    [Migration("20230410230606_intial")]
+    partial class intial
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
@@ -67,6 +67,10 @@ namespace TicketsList.Migrations
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("Name")
+                        .IsRequired()
+                        .HasColumnType("nvarchar(max)");
+
+                    b.Property<string>("Point")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
 

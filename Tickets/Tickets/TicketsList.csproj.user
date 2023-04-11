@@ -5,5 +5,8 @@
   </PropertyGroup>
   <PropertyGroup>
     <ActiveDebugProfile>TicketList</ActiveDebugProfile>
+    <_SelectedScaffolderID>MvcControllerEmptyScaffolder</_SelectedScaffolderID>
+    <_SelectedScaffolderCategoryPath>root/Common/MVC</_SelectedScaffolderCategoryPath>
+    <WebStackScaffolding_DependencyDialogWidth>650</WebStackScaffolding_DependencyDialogWidth>
   </PropertyGroup>
 </Project>

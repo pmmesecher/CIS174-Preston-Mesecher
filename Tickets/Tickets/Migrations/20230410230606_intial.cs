@@ -2,7 +2,7 @@
 
 namespace TicketsList.Migrations
 {
-    public partial class Intial : Migration
+    public partial class intial : Migration
     {
         protected override void Up(MigrationBuilder migrationBuilder)
         {
@@ -27,6 +27,7 @@ namespace TicketsList.Migrations
                     Name = table.Column<string>(nullable: false),
                     Description = table.Column<string>(nullable: false),
                     Sprint = table.Column<string>(nullable: false),
+                    Point = table.Column<string>(nullable: false),
                     StatusId = table.Column<string>(nullable: false)
                 },
                 constraints: table =>

@@ -23,7 +23,8 @@
                 <tr>
                     <th>Name</th>
                     <th>Description</th>
-                    <th>Sprint</th>
+                    <th>Sprint Number</th>
+                    <th>Point Value</th>
                     <th>Status</th>
                     <th class="w-25"></th>
                 </tr>
@@ -35,6 +36,7 @@
                     <td>@ticket.Name</td>
                     <td>@ticket.Description</td>
                     <td>@ticket.Sprint</td>
+                    <td>@ticket.Point</td>
                     <td>
                         <form asp-action="Edit" method="post" 
                               asp-route-id="@ViewBag.Filters.FilterString" 
